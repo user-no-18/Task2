@@ -15,6 +15,7 @@ The app includes **pause, reset, forward, and backward** controls.
 - **Algorithm.jsx**: shows the algorithm and explains what step is happening  
 - **Button.jsx**: handles all buttons like insert , delete or traverse
 
-## Future Scope
+## Future Scope - due for lack of time
 - Use a global AppContext to manage animation state (or improve pause logic without it)
 - Add a speed control slider (currently using an 800ms delay , more speed -> less delay)
+- Add more buttons and their functionality Like search , toggle view etc , same type algorithm for search should be implemented
