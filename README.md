@@ -11,9 +11,9 @@ The app includes **pause, reset, forward, and backward** controls.
 
 ## Structure
 - **BST.js**: implements the core BST logic and operations  
-- **TreeVisualizer**: renders the tree in the UI  
-- **Algorithm**: shows the algorithm and explains what step is happening  
-- **Button**: handles all buttons like insert , delete or traverse
+- **TreeVisualizer.jsx**: renders the tree in the UI  
+- **Algorithm.jsx**: shows the algorithm and explains what step is happening  
+- **Button.jsx**: handles all buttons like insert , delete or traverse
 
 ## Future Scope
 - Use a global AppContext to manage animation state (or improve pause logic without it)
