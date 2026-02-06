@@ -1,16 +1,20 @@
-# React + Vite
+# Binary Search Tree Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates **insertion, deletion, and traversal** (inorder, preorder, postorder) of a Binary Search Tree.
 
-Currently, two official plugins are available:
+Traversal is visualized step by step, showing:
+- the current algorithm step in real time  
+- reasoning behind each step (e.g., *“Postorder traversal of 10 is complete”*)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app includes **pause, reset, forward, and backward** controls.  
+⚠️ Click the **pause button twice** to start the animation.
 
-## React Compiler
+## Structure
+- **BST.js**: implements the core BST logic and operations  
+- **TreeVisualizer**: renders the tree in the UI  
+- **Algorithm**: shows the algorithm and explains what step is happening  
+- **Button**: handles all animation controls
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Scope
+- Use a global AppContext to manage animation state (or improve pause logic without it)
+- Add a speed control slider (currently using an 800ms delay)
